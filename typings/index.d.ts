@@ -10,6 +10,7 @@ declare class PasswordValidator {
      *           failures instead of just true/false
      * @param {boolean} [options.details] - asks for more details about
      *           failed validations including arguments, and error messages
+     * @param {string} [options.language] - Default en-Us - pt-Br
      * @returns {boolean|array} Boolean value indicting the validity
      *           of the password as per schema, if 'options.list' or
      *           'options.details' is not set. Otherwise, it returns an
@@ -21,6 +22,7 @@ declare class PasswordValidator {
     }): boolean | any[];
     list: boolean;
     details: boolean;
+    language: string;
     password: string;
     positive: boolean;
     /**
