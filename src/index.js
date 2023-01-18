@@ -56,21 +56,22 @@ class PasswordValidator {
    * Method to validate the password against schema
    *
    * @param {string} pwd - password to validate
-   * @param {string} language - en-Us Default - pt-Br
    * @param {object} [options] - optional options to configure validation
    * @param {boolean} [options.list] - asks for a list of validation
    *           failures instead of just true/false
    * @param {boolean} [options.details] - asks for more details about
+   * 
+   *  @param {string} [options.language] - asks for more details about
    *           failed validations including arguments, and error messages
    * @returns {boolean|array} Boolean value indicting the validity
    *           of the password as per schema, if 'options.list' or
    *           'options.details' is not set. Otherwise, it returns an
    *           array of property names which failed validations
    */
-  validate(pwd, options, language) {
+  validate(pwd, options) {
     this.list = Boolean(options && options.list);
     this.details = Boolean(options && options.details);
-    this.language = String(language)
+    this.language = String(options && options.language);
     this.password = String(pwd);
 
     this.positive = true;
