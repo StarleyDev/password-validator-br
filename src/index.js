@@ -94,7 +94,7 @@ class PasswordValidator {
               detail.inverted = true;
             }
             var description = property.arguments && property.arguments[1];
-            var validationMessage = description || getValidationMessage(property.method, detail.arguments, detail.inverted, language);
+            var validationMessage = description || getValidationMessage(property.method, detail.arguments, detail.inverted, this.language);
             detail.message = validationMessage;
           }
 
