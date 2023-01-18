@@ -61,7 +61,7 @@ class PasswordValidator {
    *           failures instead of just true/false
    * @param {boolean} [options.details] - asks for more details about
    *           failed validations including arguments, and error messages
-   * @param {string} [options.language] - Default en-Us - pt-Br
+   * @param {boolean} [options.isPtBr] - Default en-Us - pt-Br
    * @returns {boolean|array} Boolean value indicting the validity
    *           of the password as per schema, if 'options.list' or
    *           'options.details' is not set. Otherwise, it returns an
@@ -70,7 +70,7 @@ class PasswordValidator {
   validate(pwd, options) {
     this.list = Boolean(options && options.list);
     this.details = Boolean(options && options.details);
-    this.language = String(options && options.language);
+    this.isPtBr = Boolean(options && options.isPtBr);
     this.password = String(pwd);
 
     this.positive = true;
@@ -94,7 +94,7 @@ class PasswordValidator {
               detail.inverted = true;
             }
             var description = property.arguments && property.arguments[1];
-            var validationMessage = description || getValidationMessage(property.method, detail.arguments, detail.inverted, this.language);
+            var validationMessage = description || getValidationMessage(property.method, detail.arguments, detail.inverted, this.isPtBr);
             detail.message = validationMessage;
           }
 
