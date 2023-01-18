@@ -31,12 +31,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tarunbatra/password-validator.git"
+    "url": "git+https://github.com/StarleyDev/password-validator-br"
   },
   "bugs": {
-    "url": "https://github.com/tarunbatra/password-validator/issues"
+    "url": "https://github.com/StarleyDev/password-validator-br/issues"
   },
-  "homepage": "https://github.com/tarunbatra/password-validator#readme",
+  "homepage": "https://github.com/StarleyDev/password-validator-br#readme",
   "dependencies": {},
   "devDependencies": {
     "chai": "^4.2.0",
