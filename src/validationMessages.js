@@ -1,5 +1,5 @@
-module.exports = function (method, arg, inverted) {
-  const msgList = inverted ? negativeMessagesBr : positiveMessagesBr;
+module.exports = function (method, arg, inverted, language) {
+  const msgList = inverted ? language === 'pt-Br' ? negativeMessagesBr : negativeMessages : language === 'pt-Br' ? positiveMessagesBr : positiveMessages;
   return msgList[method] && msgList[method](arg);
 };
 
