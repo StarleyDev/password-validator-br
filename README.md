@@ -5,6 +5,9 @@
 ![gh action build status][gh_build-url]
 [![coverage status][codecov-image]][codecov-url]
 
+## News
+Add suport language to pt-Br by Starley Cazorla
+
 ## Install
 `npm install password-validator`
 
