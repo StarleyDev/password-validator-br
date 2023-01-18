@@ -19,6 +19,7 @@ declare class PasswordValidator {
     validate(pwd: string, options?: {
         list?: boolean;
         details?: boolean;
+        language?: string;
     }): boolean | any[];
     list: boolean;
     details: boolean;
