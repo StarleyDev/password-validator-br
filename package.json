@@ -1,5 +1,5 @@
 {
-  "name": "password-validator",
+  "name": "@starley/password-validator-br",
   "version": "5.3.2",
   "description": "Validates password according to flexible and intuitive specifications",
   "main": "src/index.js",

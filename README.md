@@ -44,6 +44,10 @@ console.log(schema.validate('invalidPASS'));
 console.log(schema.validate('joke', { list: true }));
 // => [ 'min', 'uppercase', 'digits' ]
 
+// The option language must be used together with details option, to return message according to language set. 
+/** Language avaliable - If is not set, English by default, pt-Br (Brazil) and es-Ar (Argentina) */
+console.log(schema.validate('joke', { details: true, language: 'pt-Br' }));
+// => [ 'message': 'A senha deve ter o tamanho minimo de 8 caracteres' ]
 ```
 
 ## Advanced usage
@@ -123,6 +127,7 @@ Rules supported as of now are:
 ## Options
 The following options can be passed to `validate` method:
 * `list` - If set, validate method returns a list of rules which failed instead of true/false.
+* `language` - If set, returns message by language.
 
 ## Resources
 * API Reference
