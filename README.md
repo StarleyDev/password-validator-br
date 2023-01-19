@@ -6,14 +6,19 @@
 [![coverage status][codecov-image]][codecov-url]
 
 ## News
-Add suport language to pt-Br by Starley Cazorla
+Add suport language to pt-Br by Starley Cazorla 18/01/2023
+Add suport language to es-Ar by Starley Cazorla 19/01/2023
 
 ## Install
-`npm install password-validator`
+`npm install https://github.com/StarleyDev/password-validator-br`
 
 ## Usage
 ```js
 var passwordValidator = require('password-validator');
+
+or 
+
+import PasswordValidator from "password-validator";
 
 // Create a schema
 var schema = new passwordValidator();
