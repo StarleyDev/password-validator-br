@@ -7,6 +7,7 @@
 
 ## News
 Add suport language to pt-Br by Starley Cazorla 18/01/2023
+
 Add suport language to es-Ar by Starley Cazorla 19/01/2023
 
 ## Install
