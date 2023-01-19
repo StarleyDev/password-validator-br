@@ -10,8 +10,12 @@ Add suport language to pt-Br by Starley Cazorla 18/01/2023
 
 Add suport language to es-Ar by Starley Cazorla 19/01/2023
 
+## Original Developer and Project
+[Tarun Batra](https://github.com/tarunbatra)
+[password-validator](https://github.com/tarunbatra/password-validator)
+
 ## Install
-`npm install https://github.com/StarleyDev/password-validator-br`
+`npm install @starley/password-validator-br`
 
 ## Usage
 ```js
@@ -139,8 +143,7 @@ The following options can be passed to `validate` method:
 For APIs of other older versions, head to Wiki.
 
 ## License
-[MIT License](https://choosealicense.com/licenses/mit/)
-
+[MIT License](https://choosealicense.com/licenses/mit/) 
 
 [logo-image]: https://res.cloudinary.com/tbking/image/upload/v1490803400/password-validator/logo.png
 [logo-url]: https://tarunbatra.github.io/password-validator
